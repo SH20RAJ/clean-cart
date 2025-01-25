@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Meteors } from "../ui/meteors";
+import { HeroVideoDialogTopInBottomOut } from "./herovideo";
+import { Introducing } from "./introducing";
 
 export function Hero() {
   return (
     <div className="relative overflow-hidden bg-background pt-[8.5rem]">
       <Meteors number={20} />
+      <Introducing   />
 
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       <div className="relative container">
@@ -28,8 +31,8 @@ export function Hero() {
               View Demo
             </Button>
           </div>
-          <div className="relative w-full max-w-5xl aspect-[16/9] rounded-xl overflow-hidden mt-16">
-            <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/20 to-background/0 z-10"></div>
+          {/* <div className="relative w-full max-w-5xl aspect-[16/9] rounded-xl overflow-hidden mt-16"> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/20 to-background/0 z-10"></div>
             <img
               src="https://i.imgur.com/yhYbDIS.png"
               alt="CleanCart Dashboard Preview"
@@ -37,7 +40,9 @@ export function Hero() {
               className="object-cover"
               priority
             />
-          </div>
+            
+          </div> */}
+          <HeroVideoDialogTopInBottomOut />
         </div>
       </div>
     </div>

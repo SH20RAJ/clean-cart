@@ -7,7 +7,6 @@ import { Testimonials } from "@/components/landing/testimonials"
 import { CTA } from "@/components/landing/cta"
 import { Footer } from "@/components/landing/footer"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
-import { Flow } from "@/components/landing/flow"
 
 export default function Home() {
   return (
